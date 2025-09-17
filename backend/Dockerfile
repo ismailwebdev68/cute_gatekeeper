@@ -5,7 +5,7 @@ WORKDIR /app
 COPY backend/package.json backend/package-lock.json* ./
 RUN npm ci || npm install --no-audit --no-fund
 
-COPY . .
+COPY backend/. .
 
 ENV NODE_ENV=production
 

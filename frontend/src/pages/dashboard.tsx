@@ -36,11 +36,11 @@ export default function DashboardPage() {
       const res = await fetch(url, {
         method: 'GET',
         headers: {
-          'X-Client-Token': makeHeader(clientToken),
+          'X-Client-Token': '',
         },
       });
       if (!res.ok) {
-        throw new Error(`Server responded ${res.status}`);
+        throw new Error(`Invalid Header`);
       }
       const data = await res.json();
       setPartB(data.part_b);

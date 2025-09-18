@@ -44,8 +44,8 @@ export default function LoginPage() {
           </div>
         </form>
         {error && <p className="ctf-error">{error}</p>}
+        <span style={{ display: 'none' }}>Secret phrase: gilbert29</span>
       </div>
-      <p id="spp">Secret Phrase: gilbert29</p>
     </div>
   );
 }

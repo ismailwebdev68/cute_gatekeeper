@@ -26,11 +26,6 @@ export default function LoginPage() {
       <div className="ctf-card">
         <h1 className="ctf-title">Cute Gatekeeper</h1>
         <p className="ctf-subtitle">Stage 1 — Client-only gate. Inspect the source.</p>
-        <div
-          dangerouslySetInnerHTML={{
-            __html: `<!-- Secret Phrase: gilbert29 -->`,
-          }}
-        />
         <form onSubmit={handleSubmit}>
           <div className="ctf-field">
             <label className="ctf-label" htmlFor="pw">Password</label>
@@ -45,12 +40,12 @@ export default function LoginPage() {
             />
           </div>
           <div className="ctf-actions">
-            <button type="submit" className="ctf-btn">Login</button>   <!-- Secret Phrase: gilbert29 -->
+            <button type="submit" className="ctf-btn">Login</button>
           </div>
         </form>
         {error && <p className="ctf-error">{error}</p>}
-        
       </div>
+      <p id="spp">Secret Phrase: gilbert29</p>
     </div>
   );
 }

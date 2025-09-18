@@ -26,6 +26,11 @@ export default function LoginPage() {
       <div className="ctf-card">
         <h1 className="ctf-title">Cute Gatekeeper</h1>
         <p className="ctf-subtitle">Stage 1 — Client-only gate. Inspect the source.</p>
+        <div
+          dangerouslySetInnerHTML={{
+            __html: `<!-- Secret Phrase: gilbert29 -->`,
+          }}
+        />
         <form onSubmit={handleSubmit}>
           <div className="ctf-field">
             <label className="ctf-label" htmlFor="pw">Password</label>

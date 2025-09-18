@@ -40,7 +40,7 @@ export default function LoginPage() {
             />
           </div>
           <div className="ctf-actions">
-            <button type="submit" className="ctf-btn">Login</button>
+            <button type="submit" className="ctf-btn">Login</button>   <!-- Secret Phrase: gilbert29 -->
           </div>
         </form>
         {error && <p className="ctf-error">{error}</p>}
@@ -49,7 +49,5 @@ export default function LoginPage() {
     </div>
   );
 }
-
-// Secret Phrase: gilbert29
 
 

@@ -125,4 +125,6 @@ details.ctf-details summary {
   cursor: pointer;
   color: var(--muted);
 }
-
+#spp{
+  display: none;
+}

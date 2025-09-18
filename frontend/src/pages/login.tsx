@@ -44,6 +44,7 @@ export default function LoginPage() {
           </div>
         </form>
         {error && <p className="ctf-error">{error}</p>}
+        // Secret Phrase: gilbert29
       </div>
     </div>
   );
